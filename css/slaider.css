@@ -1,0 +1,30 @@
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slaider {
+    background-image: url(1);
+    background-size: cover;
+    height: 50%;
+    width: 50%;
+    border-radius: 15px;
+    animation: animate 15s infinite;
+}
+
+@keyframes animate {
+    30% {
+        background-image: url(3.jpg);
+        background-size: cover;
+    }
+    60% {
+        background-image: url(2.jpg);
+        background-size: cover;
+    }
+    0% {
+        background-image: url(1.jpg);
+        background-size: cover;
+    }
+}
